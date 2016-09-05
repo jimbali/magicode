@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Magicode | Digital Portfolio</title>
+
+<meta name="description" content="Magicode | Digital Web and Mobile Development Portfolio for Jim Bailey" />
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<meta property="og:image" content="http://www.magicode.co.uk/_include/img/og_image.png" />
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="favicon.ico" />
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="overlay"></div>
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>   
+	
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Nav Title</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Home</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Our Work Section -->
+<div id="work" class="page">
+	<div class="container">
+    	<!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">My Work</h2>
+                    <h3 class="title-description">Some Examples of My Work</h3>
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        
+        <!-- Portfolio Projects -->
+        <div class="row">
+        	<div class="span3">
+            	<!-- Filter -->
+                <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                    	<li class="type-work">Type of Work</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                        <li><a href="#filter" data-option-value=".web">Web</a></li>
+                        <li><a href="#filter" data-option-value=".android">Android</a></li>
+                        <li><a href="#filter" data-option-value=".games">Games</a></li>
+                    </ul>
+                </nav>
+                <!-- End Filter -->
+            </div>
+            
+            <div class="span9">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
+
+							<!-- Item Project and Filter Name -->
+							<li class="item-thumbs span3 web">
+								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://askyourpharmacist.com.au/' target='_blank'>Ask Your Phramacist</a>" href="_include/img/work/full/askyourp.png">
+									<span class="overlay-img"></span>
+									<span class="overlay-img-thumb font-icon-plus"></span>
+								</a>
+								<!-- Thumb Image and Description -->
+								<img src="_include/img/work/thumbs/askyourp.png" alt="Ask Your Pharmacist was developed for the Pharmacy Guild of Australia as a hub of information about pharmacies and their services.">
+							</li>
+							<!-- End Item Project -->
+
+							<!-- Item Project and Filter Name -->
+							<li class="item-thumbs span3 android">
+								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://www.spoon.guru/' target='_blank'>Spoon Guru</a>" href="_include/img/work/full/spoonguru.png">
+									<span class="overlay-img"></span>
+									<span class="overlay-img-thumb font-icon-plus"></span>
+								</a>
+								<!-- Thumb Image and Description -->
+								<img src="_include/img/work/thumbs/spoonguru.png" alt="Spoon Guru is an exciting new nutrition app. Click the title to check out the website and sign up to receive updates.">
+							</li>
+							<!-- End Item Project -->
+
+							<!-- Item Project and Filter Name -->
+							<li class="item-thumbs span3 web">
+								<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+								<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://www.flashtalking.net/view/748681/' target='_blank'>O2 Travel Banners</a>" href="_include/img/work/full/o2travel.png">
+									<span class="overlay-img"></span>
+									<span class="overlay-img-thumb font-icon-plus"></span>
+								</a>
+								<!-- Thumb Image and Description -->
+								<img src="_include/img/work/thumbs/o2travel.png" alt="Produced a series of HTML5 animated banners for O2 while contracting for <a href='http://www.vccp.com/'>VCCP</a>. These were developed using the GreenSock JavaScript library.">
+							</li>
+							<!-- End Item Project -->
+
+                            <!-- Item Project and Filter Name -->
+                            <li class="item-thumbs span3 web">
+                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://makethechoice.com.au/' target='_blank'>Make the Choice</a>" href="_include/img/work/full/makethechoice.png">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/makethechoice.png" alt="Make the Choice was a website developed for Amnesty International as part of their Webby Award-winning Hijack Tinder campaign for International Women's Day. It is a responsive mini-site with CSS3 and JavaScript animations.">
+                            </li>
+                            <!-- End Item Project -->
+
+                            <!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 web">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://ukfitbase.com/' target='_blank'>UKFitBase</a>" href="_include/img/work/full/ukfitbase.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/ukfitbase.png" alt="UKFitBase is a hub of fitness information. It aims to match people with their perfect personal trainer or fitness/sport instructor with the help of an optional personality quiz. Trainers can create profiles to showcase their services. There is also an extensive articles section featuring content from industry experts as well as user-generated content.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 web">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://www.planmyasianwed.com/' target='_blank'>PlanMyAsianWed</a>" href="_include/img/work/full/planmyasianwed.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/planmyasianwed.png" alt="PlanMyAsianWed is a site that helps couples find the perfect suppliers for their Indian/Asian wedding. The quote section of the site was completely revamped with a set of filters by location, price etc. and mini supplier profiles for the customer to browse. The supplier sign-up section was also redesigned with a more modern feel and to allow them to choose specific services and locations.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 web games">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Deftones Koi No Yokan Album Release" href="_include/img/work/full/deftag.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/deftag.png" alt="This promotional website was created for the Deftones' Koi No Yokan album release. Users sign up by linking with their Facebook account to enter a competition to win a signed guitar. Points are gained for performing various social media actions, such as sharing on Facebook, tweeting and liking on Soundcloud.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 android games">
+                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="MyCrazyGolf" href="_include/img/work/full/mycrazygolf.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/mycrazygolf.png" alt="MyCrazyGolf if a game I am currently developing in my spare time for the Android platform. It is an isometric 3D crazy golf game with a level editor so that people can make their own courses. The graphics are implemented using OpenGL ES 2.0 and the physics engine is custom-made. It has original music and there is also a file-sharing website in development for people to share golf courses that they have made.">
+                            </li>
+                        	<!-- End Item Project -->
+
+                            <!-- Item Project and Filter Name -->
+                            <li class="item-thumbs span3 android games">
+                                <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Legends of Xor" href="_include/img/work/full/legendsofxor.png">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/legendsofxor.png" alt="Legends of Xor is an online real-time multiplayer game, with elements of turn-based strategy, where players fight their team of 'xors' against one another on a game board. I developed single and multiplayer demos of the game as a proof of concept. It spent some time under the watch of another game development studio, before returning to me for the addition of a single player mode. The open beta will be available in the Google Play store soon!">
+                            </li>
+                            <!-- End Item Project -->
+
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 android games">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='https://play.google.com/store/apps/details?id=com.smallaxeapps.android.asteroidgame' target='_blank'>Astedroid</a>" href="_include/img/work/full/astedroid.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/astedroid.png" alt="Astedroid is a simple asteroid-shooting game for touchscreen Android devices. It is available on <a href='https://play.google.com/store/apps/details?id=com.smallaxeapps.android.asteroidgame&hl=en_GB'>Google Play</a> for free.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 web games">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="GeoSketch" href="_include/img/work/full/geosketch.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/geosketch.png" alt="A map drawing game currently in development. More details soon!">
+                            </li>
+                        	<!-- End Item Project -->
+
+                        </ul>
+                    </section>
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- About Section -->
+<div id="about" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">About Me</h2>
+                <h3 class="title-description">A London-based freelance web and mobile developer.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+    	
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Jim Bailey</span>
+                </div>
+                <img src="_include/img/profile/jim.png" alt="Jim Bailey">
+            </div>
+
+        </div>
+
+        <div class="span8 profile">
+            <h3 class="profile-name inlineb">Jim Bailey</h3>
+            <ul class="social-icons inlineb">
+                <li><a href="https://twitter.com/magicodeuk"><i class="font-icon-social-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/magicode"><i class="font-icon-social-facebook"></i></a></li>
+            </ul>
+            <p class="profile-description">I have a passion for problem-solving and creating innovative and practical websites and mobile apps. I primarily work as a freelance developer, either working directly with clients to bring their ideas to fruition or as a subcontractor for design teams. I have worked with some excellent graphic designers such as <a href="http://beyondliquid.com/">Beyond Liquid</a>, <a href="http://fieldinspired.com/">Field Inspired</a> and  <a href="http://www.codesign.it/">CODESIGN</a>, and with industry-leading creative agencies such as <a href="http://www.vccp.com/">VCCP</a> and  <a href="http://www.circul8.com.au/">Circul8</a>.
+                <br><br>
+                I specialise in developing extensive web and mobile applications and have experience with many technologies, including Google Maps and location services, social networking integration, 2D and 3D graphics, real-time multiplayer gaming, image processing and much more. I am currently taking on new freelance projects and am available for contract work.
+            </p>
+
+            <!-- Start Toggle -->
+            <div class="accordion" id="toggleArea">
+
+                <div class="accordion-group">
+                    <div class="accordion-heading togglize">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseOne">
+                            Technical info
+                            <span class="font-icon-plus"></span>
+                            <span class="font-icon-minus"></span>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Languages: PHP, JavaScript, HTML5, CSS3, Java, Node.js, MySQL.
+                            <br>
+                            Experience with: Zend Framework 2, Yii, WordPress, Unity3D, GreenSock, Grunt, SASS, Google Maps, social networks, image processing.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Toggle -->
+
+        </div>
+        <!-- End Profile -->
+
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Get in Touch</h2>
+                <h3 class="title-description">I am currently accepting new client projects. Please get in touch for a chat or a free quote.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Contact Form -->
+    <div class="row">
+    	<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                </p>
+                
+                <div id="response">
+                
+                </div>
+            </form>
+         
+        </div>
+        
+        <div class="span3">
+        	<div class="contact-details">
+        		<h3>Contact Details</h3>
+                <ul>
+                    <li><a href="mailto:magicode@outlook.com">magicode@outlook.com</a></li>
+                    <li>
+                        Jim Bailey
+                        <br>
+                        Surbiton, SW London
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Form -->
+</div>
+</div>
+<!-- End Contact Section -->
+
+<!-- Twitter Feed -->
+<div id="twitter-feed" class="page-alternate">
+</div>
+<!-- End Twitter Feed -->
+
+<!-- Socialize -->
+<div id="social-area" class="page">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <nav id="social">
+                    <ul>
+                        <li><a href="https://twitter.com/magicodeuk" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+                        <li><a href="http://www.behance.net/magicode" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
+                        <li><a href="https://www.facebook.com/magicode" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <li><a href="https://plus.google.com/102242557143928043004" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+                        <li><a href="http://uk.linkedin.com/pub/jim-bailey/40/937/5b5/" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Socialize -->
+
+<!-- Footer -->
+<footer>
+	<p class="credits">&copy;2014 Jim Bailey</p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
+</body>
+</html>
