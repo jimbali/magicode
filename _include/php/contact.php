@@ -73,10 +73,7 @@ class Contact_Form{
 
 
 	private function sendEmail(){
-		$mail = mail($this->email_admin, $this->subject, $this->message,
-			 "From: ".$this->name." <".$this->email.">\r\n"
-			."Reply-To: ".$this->email."\r\n"
-		."X-Mailer: PHP/" . phpversion());
+		$mail = mail($this->email_admin, $this->subject, $this->message . "\n\nFrom: " . $this->email);
 	
 		if($mail)
 		{
