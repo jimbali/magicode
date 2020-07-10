@@ -1,0 +1,12 @@
+.test-area {
+    padding: 5px 10px 10px;
+    border: 1px solid black;
+}
+
+.test-text {
+    color: red;
+}
+
+.test-text.success {
+    color: green;
+}
