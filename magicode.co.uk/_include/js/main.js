@@ -248,17 +248,19 @@ BRUSHED.tweetFeed = function(){
    Menu Highlight
 ================================================== */
 
-BRUSHED.menu = function(){
-	$('#menu-nav, #menu-nav-mobile').onePageNav({
-		currentClass: 'current',
-    	changeHash: false,
-    	scrollSpeed: 750,
-    	scrollOffset: 30,
-    	scrollThreshold: 0.5,
-		easing: 'easeOutExpo',
-		filter: ':not(.external)'
-	});
-}
+// This is well broken
+
+// BRUSHED.menu = function(){
+// 	$('#menu-nav, #menu-nav-mobile').onePageNav({
+// 		currentClass: 'current',
+//     	changeHash: false,
+//     	scrollSpeed: 750,
+//     	scrollOffset: 30,
+//     	scrollThreshold: 0.5,
+// 		easing: 'easeOutExpo',
+// 		filter: ':not(.external)'
+// 	});
+// }
 
 /* ==================================================
    Next Section
@@ -414,7 +416,7 @@ $(document).ready(function(){
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
 	BRUSHED.listenerMenu();
-	BRUSHED.menu();
+	// BRUSHED.menu();
 	BRUSHED.goSection();
 	BRUSHED.goUp();
 	BRUSHED.filter();
