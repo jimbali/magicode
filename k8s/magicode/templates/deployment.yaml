@@ -37,7 +37,7 @@ spec:
                   name: magicode-mail-creds
                   key: password
             - name: MAIL_PORT
-              value: 587
+              value: '587'
             - name: MAIL_TO
               value: magicode@outlook.com
             - name: MAIL_USERNAME
