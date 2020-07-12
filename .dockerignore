@@ -1,1 +1,6 @@
 Dockerfile
+.dockerignore
+.git
+.gitignore
+.rspec
+magicode.co.uk/vendor

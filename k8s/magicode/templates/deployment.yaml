@@ -28,6 +28,20 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: MAIL_HOST
+              value: smtp.gmail.com
+            - name: MAIL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: magicode-mail-creds
+                  key: password
+            - name: MAIL_PORT
+              value: 587
+            - name: MAIL_TO
+              value: magicode@outlook.com
+            - name: MAIL_USERNAME
+              value: magicodeuk@gmail.com
           ports:
             - name: http
               containerPort: 80
