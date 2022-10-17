@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -11,18 +11,25 @@ spec:
       http:
         paths:
           - backend:
-              serviceName: magicode
-              servicePort: 80
+              service:
+                name: magicode
+                port:
+                  number: 80
             path: /
+            pathType: ImplementationSpecific
     - host: exttest.magicode.co.uk
       http:
         paths:
           - backend:
-              serviceName: magicode
-              servicePort: 80
+              service:
+                name: magicode
+                port:
+                  number: 80
             path: /
+            pathType: ImplementationSpecific
   tls:
     - hosts:
         - magicode.co.uk
         - exttest.magicode.co.uk
       secretName: magicode-tls
+      
