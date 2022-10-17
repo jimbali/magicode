@@ -30,18 +30,30 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: MAIL_HOST
-              value: smtp.gmail.com
+              valueFrom:
+                secretKeyRef:
+                  name: magicode-mail-creds
+                  key: host
             - name: MAIL_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: magicode-mail-creds
                   key: password
             - name: MAIL_PORT
-              value: '587'
+              valueFrom:
+                secretKeyRef:
+                  name: magicode-mail-creds
+                  key: port
             - name: MAIL_TO
-              value: magicode@outlook.com
+              valueFrom:
+                secretKeyRef:
+                  name: magicode-mail-creds
+                  key: to
             - name: MAIL_USERNAME
-              value: magicodeuk@gmail.com
+              valueFrom:
+                secretKeyRef:
+                  name: magicode-mail-creds
+                  key: username
           ports:
             - name: http
               containerPort: 80
