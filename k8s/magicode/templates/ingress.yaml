@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+    kubernetes.io/ingress.class: nginx
+  name: magicode-ingress
+spec:
+  rules:
+    - host: magicode.co.uk
+      http:
+        paths:
+          - backend:
+              serviceName: magicode
+              servicePort: 80
+            path: /
+    - host: exttest.magicode.co.uk
+      http:
+        paths:
+          - backend:
+              serviceName: magicode
+              servicePort: 80
+            path: /
+  tls:
+    - hosts:
+        - magicode.co.uk
+        - exttest.magicode.co.uk
+      secretName: magicode-tls
